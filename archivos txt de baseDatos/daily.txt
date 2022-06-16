@@ -1,6 +1,6 @@
 CREATE TABLE grupo(
 id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 nombres VARCHAR(50),
-objervaciones VARCHAR(500),
+observaciones VARCHAR(500),
 );
 
