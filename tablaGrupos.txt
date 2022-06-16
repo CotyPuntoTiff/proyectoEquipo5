@@ -1,7 +1,9 @@
 USE dailyApp;
 
-CREATE TABLE grupos (
-	Id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-	Nombre VARCHAR(20) NOT NULL,
-	Observación VARCHAR(255) 
+CREATE TABLE grupos_usuarios (
+	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	Grupo_id INT NOT NULL,
+	Usuario_id INT NOT NULL,
+	FOREIGN KEY (Grupo_id) REFERENCES grupos(id),
+	FOREIGN KEY (Usuario_id) REFERENCES usuarios(id)
 )DEFAULT CHARSET=UTF8;
