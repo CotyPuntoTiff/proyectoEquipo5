@@ -1,12 +1,16 @@
 package com.daily.models;
 
 import java.util.Date;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
@@ -27,11 +31,18 @@ public class Usuario {
     private String rut;
     @NotNull
     private Date fechaDeNacimiento;
-    //TO DO Preguntar si existe denominación especial para los correos
     @NotNull
-    private String correo;
+    private String correo; 
     @NotNull
     private String password;
+
+    //Relacion OneToMany con GrupoUsuario
+    @OneToMany(mappedBy ="usuario",cascade=CascadeType.ALL ,fetch=FetchType.LAZY) //CASCADE ES UNA RESTRICCION QUE IMPIDE ELIMINAR EL USUARIO SI NO SE HA ROTO LA RELACION
+    private List<GrupoUsuario> gruposUsuarios;
+
+    //Relacion OneToMany con DailyUsuario
+    @OneToMany(mappedBy ="usuario",cascade=CascadeType.ALL ,fetch=FetchType.LAZY) //CASCADE ES UNA RESTRICCION QUE IMPIDE ELIMINAR EL USUARIO SI NO SE HA ROTO LA RELACION
+    private List<DailyUsuario> dailysUsuarios;
 
     //Opcionales, sirven para la gestión de base de datos, NO SE AÑADEN A LOS CONSTRUCTORES NI GET AND SET
     @Column(updatable = false) //Propiedad de la columna, updatetable define si se actualiza o no
@@ -55,7 +66,7 @@ public class Usuario {
         this.correo = correo;
         this.password = password;
     }
-    //TODO PREGUNTAR SI VA EL ID EN LOS GETT AND SETT
+
     //Getter and Setters
     public Long getId() {
         return id;

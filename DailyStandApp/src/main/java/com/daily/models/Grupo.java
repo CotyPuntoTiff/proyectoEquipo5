@@ -1,12 +1,16 @@
 package com.daily.models;
 
 import java.util.Date;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
@@ -20,6 +24,15 @@ public class Grupo {
     private String nombre;
     
     private String observaciones;
+
+    //Relacion OneToMany con GrupoUsuario
+    @OneToMany(mappedBy ="grupo",cascade=CascadeType.ALL ,fetch=FetchType.LAZY) //CASCADE ES UNA RESTRICCION QUE IMPIDE ELIMINAR EL USUARIO SI NO SE HA ROTO LA RELACION
+    private List<GrupoUsuario> gruposUsuarios;
+
+    //Relacion OneToMany con Daily
+    @OneToMany(mappedBy ="grupo",cascade=CascadeType.ALL ,fetch=FetchType.LAZY) //CASCADE ES UNA RESTRICCION QUE IMPIDE ELIMINAR EL USUARIO SI NO SE HA ROTO LA RELACION
+    private List<Daily> daily;
+
 
     @Column(updatable = false) //Propiedad de la columna, updatetable define si se actualiza o no
     private Date createdAt; //Fecha de creación
