@@ -1,12 +1,18 @@
 package com.daily.models;
 
 import java.util.Date;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -20,6 +26,16 @@ public class Daily {
     private Date createdAt; //Fecha de creación
     
     private String notasDaily;
+
+    //Relacion OneToMany con DailyUsuario
+    @OneToMany(mappedBy ="daily",cascade=CascadeType.ALL ,fetch=FetchType.LAZY) //CASCADE ES UNA RESTRICCION QUE IMPIDE ELIMINAR EL USUARIO SI NO SE HA ROTO LA RELACION
+    private List<DailyUsuario> dailysUsuarios;
+
+    //Relacion ManyToOne con Grupo
+    @ManyToOne(fetch=FetchType.LAZY) //CASCADE ES UNA RESTRICCION QUE IMPIDE ELIMINAR EL USUARIO SI NO SE HA ROTO LA RELACION
+    @JoinColumn(name="grupo_id")
+    private Grupo grupo;
+
 
     //Constructor vacío
     public Daily() {
