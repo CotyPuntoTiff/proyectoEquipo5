@@ -1,12 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html>
 
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Daily Stand App</title>
+    </head>
+
+    <body>
+
+    </body>
+
+    </html>
