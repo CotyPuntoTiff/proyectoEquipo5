@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="back">
+        <!-- Espacio de la derecha -->
+        <div class="backRight"></div>
+        <!-- Espacio de la izquierda -->
+        <div class="backLeft"></div>
+    </div>
+
+    <div id="slideBox">
+        <div class="topLayer">
+            <!-- izquierda -->
+            <div class="left">
+                <div class="content">
+                    <!-- Titulo Suscribir-->
+                    <h2>Suscribir</h2>
+                    <form method="post" onsubmit="return false;">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre">
+                            <input type="text" placeholder="Apellido">
+                            <label for="fechaNacimiento">Fecha de nacimiento </label>
+                            <input type="date">
+                            <input type="email" placeholder="Correo electronico" />
+                            <input type="text" placeholder="Contraseña" />
+
+
+
+                        </div>
+                        <div class="form-group"></div>
+                        <div class="form-group"></div>
+                        <div class="form-group"></div>
+                    </form>
+                    <button id="goLeft" class="off">Ingresar</button>
+                    <button>Suscribir</button>
+                </div>
+            </div>
+            <!-- derecha -->
+            <div class="right">
+                <div class="content">
+                    <!-- titulo ingresar -->
+                    <h2>Ingresar</h2>
+                    <form method="post" onsubmit="return false;">
+                        <div class="form-group">
+                            <input type="email" placeholder="Correo electronico" />
+                            <input type="password" placeholder="Contraseña" />
+                        </div>
+                        <button id="goRight" class="off">Suscribir</button>
+                        <button id="login" type="submit">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<!--Inspiration from: http://ertekinn.com/loginsignup/-->
