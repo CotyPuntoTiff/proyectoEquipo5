@@ -1,0 +1,29 @@
+body {
+    background-color: #f7f6f6;
+}
+
+
+/* --------IZQUIERDA */
+
+
+/* id logo del inicio */
+
+#inicio-logo {
+    max-height: 30%;
+    margin-top: 10%;
+}
+
+
+/* imagen Izquierda personas en reunion  */
+
+.inicio-img-L {
+    max-width: 30%;
+}
+
+
+/* --------DERECHA */
+
+.inicio-derecha {
+    background-image: url(../assets/img/DSApp-inicio-2-658x657.jpg);
+    background-position: center;
+}
