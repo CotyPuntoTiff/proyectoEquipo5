@@ -1,0 +1,10 @@
+USE dailyApp;
+​
+CREATE TABLE Daily(
+id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+fecha DATE,
+grupo_id int NOT NULL,
+notas varchar(200),
+FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
