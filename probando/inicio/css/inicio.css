@@ -1,4 +1,5 @@
-body {
+
+#inicio{
     background-color: #f7f6f6;
 }
 
@@ -11,6 +12,8 @@ body {
 
 /* Right */
 .inicio-R {
-    background-image: url(/assets/img/DSApp-fondo-azul-658x657.jpg);
-    background-position: center;
+    background-image: url(/assets/img/DailyStandAPP-inicio-fondo-derecho.PNG);
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    background-size: cover;
 }
