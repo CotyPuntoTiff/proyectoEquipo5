@@ -30,7 +30,7 @@ public class Usuario {
     @NotNull
     private String rut;
     @NotNull
-    private Date fechaDeNacimiento;
+    private String fechaDeNacimiento; //Se usa string y en el jsp type="date"
     @NotNull
     private String correo; 
     @NotNull
@@ -57,7 +57,7 @@ public class Usuario {
     }
 
     //Constructor con atributos
-    public Usuario(String nombre, String apellido, String rut, Date fechaDeNacimiento, String correo,
+    public Usuario(String nombre, String apellido, String rut, String fechaDeNacimiento, String correo,
             String password) {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -100,11 +100,11 @@ public class Usuario {
         this.rut = rut;
     }
 
-    public Date getFechaDeNacimiento() {
+    public String getFechaDeNacimiento() {
         return fechaDeNacimiento;
     }
 
-    public void setFechaDeNacimiento(Date fechaDeNacimiento) {
+    public void setFechaDeNacimiento(String fechaDeNacimiento) {
         this.fechaDeNacimiento = fechaDeNacimiento;
     }
 
