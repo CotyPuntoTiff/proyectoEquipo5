@@ -1,13 +1,43 @@
 .titulo{
-    margin: 30px;
-    border-radius: 3px 3px 3px;
+    border-radius: 5px;
+    padding: 3%
+}
+.titulo2{
+    background-color: white;
 }
 div{
-margin: 30px;
-border-radius: 3px 3px 3px;
-
+border-radius: 5px;
 }
 
 .borde1{
     margin-top: 40px;
+}
+
+.logoesquina{
+    margin-top: 100%;
+    width: 200px;
+    height: 112px;
+}
+
+.botonatras{
+    margin-top: 113%;
+    margin-left: 85%;
+}
+
+.formulario{
+    padding: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.botonesCentro{
+    padding: 1%;
+}
+
+.fondo1{
+    background-color:whitesmoke;
+}
+
+.fondo2{
+    background-color:whitesmoke;
 }
