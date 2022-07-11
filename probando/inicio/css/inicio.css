@@ -1,0 +1,16 @@
+body {
+    background-color: #f7f6f6;
+}
+
+/* Left */
+#logo-inicio{
+    width: 55%;
+    margin-top: 45%;
+}
+
+
+/* Right */
+.inicio-R {
+    background-image: url(/assets/img/DSApp-fondo-azul-658x657.jpg);
+    background-position: center;
+}
