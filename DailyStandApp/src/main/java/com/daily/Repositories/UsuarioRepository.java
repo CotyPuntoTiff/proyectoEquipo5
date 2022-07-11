@@ -14,5 +14,7 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
     // Query comun o nativa utilizamos la tabla
     @Query(value = "select * from usuarios u where u.nombre=?1", nativeQuery = true)
     List<Usuario> buscarNombre(String nombre);
+    //validar existencia del correo usuario
+    Usuario FindByCorreo(String correo);
 
 }

@@ -11,34 +11,37 @@
                             <title>Registro Nuevo Usuario DailyStandApp</title>
                         </head>
 
-                        <body>
-                            <div>
-                                <H1> Registro de Usuario</H1>
-                                <c:if test="${msgError!= null}">
-                                    <c:out value="${msgError}"></c:out>
-                                </c:if>
-                                <form:form action="/registro/usuario" method="post" modelAttribute="usuario">
-                                    <form:label path="nombre">Nombre</form:label>
-                                    <form:input path="nombre" />
-                                    <br>
-                                    <form:label path="apellido">Apellido</form:label>
-                                    <form:input path="apellido" />
-                                    <br>
-                                    <form:label path="rut">Rut</form:label>
-                                    <form:input path="rut" />
-                                    <br>
-                                    <form:label path="fechaDeNacimiento">Fecha de Nacimiento</form:label>
-                                    <form:input type="date" path="fechaDeNacimiento" />
-                                    <br>
-                                    <form:label path="correo">Correo Electrónico</form:label>
-                                    <form:input type="text" path="correo" />
-                                    <br>
-                                    <form:label path="password">Password</form:label>
-                                    <form:input type="password" path="password" />
-                                    <br>
-                                    <button type="submit" value="Registrar"> Registrarse </button>
-                                </form:form>
-                            </div>
+            <body>
+                <div>
+                    <H1> Registro de Usuario</H1>
+                    <c:if test="${msgError!= null}">
+                        <c:out value="${msgError}"></c:out>
+                    </c:if>
+                    <form:form action="/registro/usuario" method="post" modelAttribute="usuario">
+                        <form:label path="nombre">Nombre</form:label>
+                        <form:input path="nombre" />
+                        <br>
+                        <form:label path="apellido">Apellido</form:label>
+                        <form:input path="apellido" />
+                        <br>
+                        <form:label path="rut">Rut</form:label>
+                        <form:input path="rut" />
+                        <br>
+                        <form:label path="fechaDeNacimiento">Fecha de Nacimiento</form:label>
+                        <form:input type="date" path="fechaDeNacimiento" />
+                        <br>
+                        <form:label path="correo">Correo Electrónico</form:label>
+                        <form:input type="email" path="correo" />
+                        <br>
+                        <form:label path="password">Password</form:label>
+                        <form:input type="password" path="password" />
+                        <br>
+                        <form:label path="confirmarPassword">confimar Password</form:label>
+                        <form:input type="password" path="confirmarPassword" />
+                        <br>
+                        <button type="submit" value="Registrar"> Registrarse </button>
+                    </form:form>
+                </div>
 
                         </body>
 

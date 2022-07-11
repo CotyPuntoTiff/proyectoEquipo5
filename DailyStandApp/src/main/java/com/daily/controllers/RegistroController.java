@@ -44,6 +44,7 @@ public class RegistroController {
         
         //Enviar el objeto al service
         usuarioService.saveUsuario(usuario);
+        //retorno el mensaje 
 
         return "index.jsp"; // Página a desplegar
         }
