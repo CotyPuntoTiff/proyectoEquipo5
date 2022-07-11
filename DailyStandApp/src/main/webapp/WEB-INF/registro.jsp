@@ -36,6 +36,9 @@
                         <form:label path="password">Password</form:label>
                         <form:input type="password" path="password" />
                         <br>
+                        <form:label path="confirmarPassword">confimar Password</form:label>
+                        <form:input type="password" path="confirmarPassword" />
+                        <br>
                         <button type="submit" value="Registrar"> Registrarse </button>
                     </form:form>
                 </div>
