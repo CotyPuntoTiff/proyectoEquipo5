@@ -14,7 +14,7 @@
             <body>
                 <div>
                     <H1> Registro de Usuario</H1>
-                    <c:if test="${msgError!= null}">
+                    <c:if test="${msgError != null}">
                         <c:out value="${msgError}"></c:out>
                     </c:if>
                     <form:form action="/registro/usuario" method="post" modelAttribute="usuario">
@@ -28,13 +28,13 @@
                         <form:input path="rut" />
                         <br>
                         <form:label path="fechaDeNacimiento">Fecha de Nacimiento</form:label>
-                        <form:input type="date" path="fechaDeNacimiento" />
+                        <form:input type="date" path="fechaDeNacimiento"/>
                         <br>
                         <form:label path="correo">Correo Electrónico</form:label>
                         <form:input type="email" path="correo" />
                         <br>
                         <form:label path="password">Password</form:label>
-                        <form:input type="password" path="password" />
+                        <form:input path="password" />
                         <br>
                         <button type="submit" value="Registrar"> Registrarse </button>
                     </form:form>
