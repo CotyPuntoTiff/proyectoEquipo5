@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_a06816
 <<<<<<< .merge_file_a10708
 <!DOCTYPE html>
 <html lang="en">
@@ -329,4 +330,170 @@
 </body>
 
 >>>>>>> .merge_file_a12292
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis grupos</title>
+    <!--Link CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        /*Ajustando el tamaño de la foto de perfil, su posición y que va sobre p*/
+        #fotoPerfil {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        /*Tamaño del logo*/
+        #logo {
+            width: 380px;
+            height: 100px;
+            filter: brightness(1.1);
+            mix-blend-mode: multiply;
+        }
+
+        /*ajuste del lugar y forma junto a la foto de perfil*/
+        p {
+            background-color: rgba(0, 0, 0, 0.10);
+            padding: 20px;
+            border-radius: 35px;
+            text-align: center;
+            vertical-align: middle;
+            margin-left: 40px;
+            width: 200px;
+            margin-top: 10px;
+        }
+
+        /*Texto centrado*/
+        table {
+            text-align: center;
+        }
+
+        /*Margen entre el reloj y la tabla*/
+        .tabla {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body class="grad">
+    <!--Contener de la pagina-->
+    <div class="container my-3 p-0">
+
+
+
+        <!--Primera fila-->
+        <div class="row justify-content-between">
+            <!--Perfil usuario miniatura-->
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <img src="assets/img/Shera2.jfif" class="img-responsive rounded-circle border border-dark img-fluid"
+                    id="fotoPerfil">
+                <!--Nombre usuario junto a la foto de perfil-->
+                <p class="position-relative">María Ponce</p>
+            </div>
+            <!--Logo-->
+            <img src="assets/img/logo-500x300.png" id="logo" class="img-responsive col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        </div>
+        <!--segunda fila-->
+        <div class="row justify-content-center text-center position-relative">
+            <!--Título tabla-->
+            <h2>Mis Grupos</h2>
+        </div>
+        <!--tercera fila-->
+        <div class="row">
+            <!--Hora-->
+            <div class="mx-auto p-1"
+                style="width: 200px; text-align: center; border-radius: 5px; background-color: rgba(0, 0, 0, 0.10);">
+                <script type="text/javascript">
+                    function startTime() {
+                        today = new Date();
+                        h = today.getHours();
+                        m = today.getMinutes();
+                        m = checkTime(m);
+                        document.getElementById('reloj').innerHTML = h + ":" + m;
+                        t = setTimeout('startTime()', 500);
+                    }
+                    function checkTime(i) { if (i < 10) { i = "0" + i; } return i; }
+                    window.onload = function () { startTime(); }
+                </script>
+                <div id="reloj" style="font-size:20px;"></div>
+            </div>
+            <!--Fin código hora-->
+        </div>
+        <!--salta de linea-->
+        <br>
+        <!--cuarta fila-->
+        <div class="tabla row">
+            <!--Tabla Grupos-->
+            <table class="table table-striped">
+                <!--cabecera, titulos de la tabla-->
+                <thead class="bg-info">
+                    <!--Genera filas-->
+                    <tr>
+                        <th>Nombre de grupo</th>
+                        <th>Descripción</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <!--contenido de la tabla-->
+                <tbody>
+                    <tr>
+                        <!--registro tr-->
+                        <td>DailyStandApp</td>
+                        <!--dato-->
+                        <td>DailyStandApp: "Has tu reporte diario"</td>
+                        <td><button type="submit" class="btn btn-outline-secondary">Ver grupo</button></td>
+                    </tr>
+                    <tr>
+                        <td>One2All</td>
+                        <td>Tu marcador de páginas universal y digital</td>
+                        <td><button type="submit" class="btn btn-outline-secondary">Ver grupo</button></td>
+                    </tr>
+                    <tr>
+                        <td>Agendamigo</td>
+                        <td>Un amigo para tu agenda</td>
+                        <td><button type="submit" class="btn btn-outline-secondary">Ver grupo</button></td>
+                    </tr>
+                    <tr>
+                        <td>Kids D&D</td>
+                        <td>Aprende a programar jugando</td>
+                        <td><button type="submit" class="btn btn-outline-secondary">Ver grupo</button></td>
+                    </tr>
+                    <tr>
+                        <td>Marikeiks</td>
+                        <td>Página para tomar pedidos de Repostería</td>
+                        <td><button type="submit" class="btn btn-outline-secondary">Ver grupo</button></td>
+                    </tr>
+                    <tr>
+                        <td>EcoTank</td>
+                        <td>Plantas y mediciones</td>
+                        <td><button type="submit" class="btn btn-outline-secondary">Ver grupo</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--Final tabla-->
+        <!--salto de linea-->
+        <br>
+        <!--Boton Gestionar Grupos-->
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-outline-primary">Atrás</button>
+            <button type="submit" class="btn btn-outline-secondary">Gestionar Grupos</button>
+        </div>
+
+    </div>
+    <!--Link Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+>>>>>>> .merge_file_a05908
 </html>
