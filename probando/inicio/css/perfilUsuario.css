@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap');
+
+* {
+    font-family: 'Amiko', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+.contenedor{ /* debe ir en los dos primeros div despues del body */
+    height: 100%;
+}
+#fondo-color{
+    background-color: #f7f6f6;
+}
+.titulo{
+    border-radius: 5px;
+}
+.titulo2{
+    background-color: white;
+}
+div{
+border-radius: 5px;
+}
+
+.logoesquina{
+    width: 200px;
+}
+
+
+
+
+.fondo1{
+    background-color:#f7f6f6;
+}
+
+.fondo2{
+    background-color:whitesmoke;
+}
+
+#fotoPerfil {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+}
+/*ajuste del lugar y forma junto a la foto de perfil*/
+p {
+    background-color: rgba(0, 0, 0, 0.10);
+    padding: 20px;
+    border-radius: 35px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 40px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+#logovistageneral {
+    width: 200px;
+}

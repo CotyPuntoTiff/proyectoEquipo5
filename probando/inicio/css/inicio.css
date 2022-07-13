@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap');
+* {
+    font-family: 'Amiko', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+.contenedor{ /* debe ir en los dos primeros div despues del body */
+    height: 100%;
+}
+#fondo-color{
+    background-color: #f7f6f6;
+}
+
+/* Left */
+#logo-inicio{
+    width: 250px;
+    margin-top: 45%;
+}
+
+
+/* Right */
+.inicio-R {
+    background-image: url(/assets/img/DailyStandAPP-inicio-fondo-derecho.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
