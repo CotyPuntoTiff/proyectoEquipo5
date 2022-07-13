@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap');
+* {
+    font-family: 'Amiko', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #F7F6F6;
+}
+section, .create-group{
+height: 80%;
+}
+
+footer,.cabezera{
+height: 20%;
+}
+
+.font-size{
+    font-size: 0.85rem;
+}
+
+.font-size1{
+    font-size: 0.9rem;
+}
+
+.icon{
+    height: 30px;
+}
+
+.user{
+    width: 30%;
+}
+.logo{
+    width: 16%;
+}
+/* 768, 992, 1200, 1400 */
+@media (max-width: 576px){
+    .logo{
+        width: 50%;
+    }
+}
