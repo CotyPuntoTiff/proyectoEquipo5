@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap');
+
+* {
+    font-family: 'Amiko', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+.contenedor{ /* debe ir en los dos primeros div despues del body */
+    height: 100%;
+}
+#fondo-color{
+    background-color: #f7f6f6;
+}
 .titulo{
     border-radius: 5px;
-    padding: 3%
 }
 .titulo2{
     background-color: white;
@@ -9,30 +22,12 @@ div{
 border-radius: 5px;
 }
 
-.borde1{
-    margin-top: 40px;
-}
-
 .logoesquina{
-    margin-top: 100%;
     width: 200px;
-    height: 112px;
 }
 
-.botonatras{
-    margin-top: 113%;
-    margin-left: 85%;
-}
 
-.formulario{
-    padding: 3%;
-    margin-left: 3%;
-    margin-right: 3%;
-}
 
-.botonesCentro{
-    padding: 1%;
-}
 
 .fondo1{
     background-color:#f7f6f6;
@@ -40,4 +35,26 @@ border-radius: 5px;
 
 .fondo2{
     background-color:whitesmoke;
+}
+
+#fotoPerfil {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+}
+/*ajuste del lugar y forma junto a la foto de perfil*/
+p {
+    background-color: rgba(0, 0, 0, 0.10);
+    padding: 20px;
+    border-radius: 35px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 40px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+#logovistageneral {
+    width: 200px;
 }
