@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var timeLimit = 15; //tiempo en minutos
+        var conteo = new Date(timeLimit * 60000);
+
+        function inicializar() {
+            document.getElementById('cuenta').childNodes[0].nodeValue =
+                conteo.getMinutes() + ":" + conteo.getSeconds();
+        }
+
+        function cuenta() {
+            intervaloRegresivo = setInterval("regresiva()", 1000);
+        }
+
+        function regresiva() {
+            if (conteo.getTime() > 0) {
+                conteo.setTime(conteo.getTime() - 1000);
+            } else {
+                clearInterval(intervaloRegresivo);
+                alert("Fin");
+            }
+
+            //imprimiendo
+            document.getElementById('cuenta').childNodes[0].nodeValue =
+                conteo.getMinutes() + ":" + conteo.getSeconds();
+        }
+
+        onload = inicializar;
+    </script>
+</head>
+
+<body>
+    <table border=0 cellspacing=0 cellpadding=0>
+        <tr>
+            <td>
+                <div id="cuenta">00:00</div>
+            </td>
+        </tr>
+    </table>
+    <form>
+        <input type="button" value="Cuenta Regresiva" onclick="cuenta()">
+    </form>
+</body>
+
+</html>
