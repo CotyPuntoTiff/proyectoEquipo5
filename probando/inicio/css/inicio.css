@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap');
+* {
+    font-family: 'Amiko', sans-serif;
+}
 html, body{
     height: 100%;
 }
-#inicio{
-    background-color: #f7f6f6;
-}
-.contenedor{
+.contenedor{ /* debe ir en los dos primeros div despues del body */
     height: 100%;
+}
+#fondo-color{
+    background-color: #f7f6f6;
 }
 
 /* Left */
 #logo-inicio{
-    width: 55%;
+    width: 250px;
     margin-top: 45%;
 }
 
@@ -19,6 +23,6 @@ html, body{
 .inicio-R {
     background-image: url(/assets/img/DailyStandAPP-inicio-fondo-derecho.PNG);
     background-repeat: no-repeat;
-    /* background-size: auto; */
+    background-position: center;
     background-size: cover;
 }
