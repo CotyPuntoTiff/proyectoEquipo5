@@ -64,6 +64,7 @@
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 
+<<<<<<< .merge_file_a19624
 <<<<<<< .merge_file_a22940
 <<<<<<< .merge_file_a20228
 <<<<<<< .merge_file_a19336
@@ -85,10 +86,14 @@
 =======
 		<!--<dependency>
 >>>>>>> .merge_file_a11024
+=======
+		<!--<dependency>
+>>>>>>> .merge_file_a11592
 			<groupId>org.mindrot</groupId>
 			<artifactId>jbcrypt</artifactId>
 			<version>0.4</version>
 		</dependency>
+<<<<<<< .merge_file_a19624
 <<<<<<< .merge_file_a22940
 <<<<<<< .merge_file_a20228
 <<<<<<< .merge_file_a19336
@@ -111,6 +116,9 @@
 =======
 		<dependency>
 >>>>>>> .merge_file_a11024
+=======
+		<dependency>
+>>>>>>> .merge_file_a11592
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency> -->
