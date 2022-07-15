@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- bootstrap css< -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/estandarGeneral.css">
+    <!-- JS -->
+    <script type="module" src="../js/estandarGeneral.js"></script>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/65d6f6e156.js" crossorigin="anonymous"></script>
+    <title>Perfil de Usuario</title>
+
+</head>
+
+<body>
+    <!-- -----------INICIO DE ETIQUETAS GENERALES -->
+    <div id="contenedorGeneral" class="container-fluid contenedor">
+        <!-- Contenedor -->
+        <div id="rowGeneral" class="row contenedor">
+            <!-- Row general -->
+
+
+
+            <!-- ------------------------------ Instrucciones ------------------------------ -->
+            <!-- Paso 0: Revisar todo el html, css y js sin tocar nada. -->
+            <!-- Paso 1: Identificar cada div y su posición. -->
+            <!-- Paso 2: Realizar una copia con el nombre de la pagina a construir. -->
+            <!-- Paso 3: Insertar los elementos en bruto a los div correspondientes. -->
+            <!-- Paso 4: Esperar a definir cómo centrar y posicionar los elementos. -->
+            <!-- Recordar no modificar archivos  CSS O JS -->
+            <!-- ------------------------------ Instrucciones ------------------------------ -->
+
+
+
+            <!-- -----------ESPACIO DEL NAVBAR -->
+            <div class="col-2 container-nav">
+                <!-- col del navbar -->
+                <div class="navigation">
+                    <div class="menu-toggle"></div>
+                    <ul class="list">
+                        <li class="list-item active" style="--color:#FBCB0A"><a href="#">
+                                <span class="icon">
+                                    <i class="fa-solid fa-people-group"></i>
+                                </span>
+                                <span class="text">Mis Grupos</span>
+                            </a></li>
+                        <li class="list-item" style="--color:#590696"><a href="#">
+                                <span class="icon">
+                                    <i class="fa-regular fa-address-book"></i>
+                                </span>
+                                <span class="text">Ajustes Grupos</span>
+                            </a></li>
+                        <li class="list-item" style="--color:#C70A80"><a href="#">
+                                <span class="icon">
+                                    <i class="fa-solid fa-calendar-week"></i>
+                                </span>
+                                <span class="text">Vista General</span>
+                            </a></li>
+                        <li class="list-item" style="--color:#37E2D5"><a href="#">
+                                <span class="icon">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </span>
+                                <span class="text">Reporte Diario</span>
+                            </a></li>
+                        <li class="list-item" style="--color:#8b8b8b"><a href="#">
+                                <span class="icon">
+                                    <i class="fa-solid fa-gear"></i>
+                                </span>
+                                <span class="text">Ajustes</span>
+                            </a></li>
+                    </ul>
+                </div>
+            </div> <!-- CIERRE col del navbar -->
+            <!-- -----------ESPACIO DEL NAVBAR -->
+
+
+            <!-- -----------ESPACIO DE TRABAJO DERECHO COL-10 -->
+            <div class="col-10">
+                <!-- col contenido -->
+
+
+
+                <!-- ----------- HEADER ------------------------------------------------ -->
+                <div id="header" class="row">
+                    <!-- row del header -->
+                    <!-- ----------- HEADER IZQUIERDO-->
+                    <div class="col-1">
+                        <!-- col header-izquierdo -->
+                        <!-- VACIO -->
+                    </div> <!-- Cierre col header-izquierdo -->
+                    <!-- ----------- HEADER CENTRAL-->
+                    <div class="col text-center py-5 content-align-center">
+                        <!-- col header-central -->
+                        <h1 class="titulo2 col text-center border border-secondary" style="border-radius: 5px; background-color: white;">Perfil de Usuario</h1>
+
+                        <!------- RELOJ -------------------------------------->
+                        <!-- SOLO SE USA EN LA VISTA GENERAL -->
+                        <!------- RELOJ -------------------------------------->
+
+                    </div>
+                    <!--CIERRE col header-central -->
+                    <!-- ----------- HEADER DERECHO-->
+                    <div class="col-2 py-3">
+                        <!-- col header-derecho -->
+                        <img class="logo-500x300" src="../assets/img/logo-500x300.png" alt="LOGO 500x300">
+                    </div><!-- CIERRE col header-derecho -->
+                </div>
+                <!--CIERRE row del header -->
+                <!-- ----------- FIN HEADER ------------------------------------------------ -->
+
+
+                <!-- ----------- MAIN ------------------------------------------------ -->
+                <div id="main" class="row">
+                    <!-- row del main -->
+                    <!-- -----------MAIN IZQUIERDO -->
+                    <div class="col-1">
+                        <!-- col main izquierdo -->
+
+                    </div>
+                    <!--CIERRE col main izquierdo -->
+                    <!-- -----------MAIN CENTRAL -->
+                    <div class="col">
+                        <!-- col main central -->
+                        <div class="row">
+                            <!-- row dentro de main central -->
+                            <div class="col largo-prueba">
+                                <!-- col izquierdo del main central -->
+
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1"></label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                            placeholder="Nombre...">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1"></label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                            placeholder="Apellido...">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1"></label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                            placeholder="RUT:11111111-1">
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label class="text-black-50" for="exampleInputEmail1">Fecha de
+                                            nacimiento:</label>
+                                        <input type="date" class="form-control" aria-describedby="emailHelp"
+                                            placeholder="">
+                                    </div>
+                                    <br>
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="fa-regular fa-envelope p-1"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Correo electronico"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <br>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="fa-solid fa-key p-1"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control" placeholder="Contraseña"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <br>
+                                    <div class="botonesCentro text-center">
+                                        <a type="button" class="btn btn-secondary" href="inicio.html">Registrar</a>
+                                    </div>
+                                </form>
+
+
+
+
+                            </div>
+                            <!--CIERRE col izquierdo del main central -->
+                        </div>
+                        <!--CIERRE row dentro de main al -->
+                    </div>
+                    <!--CIERRE col main central -->
+                    <!-- -----------MAIN DERECHO -->
+                    <div class="col-2">
+                        <!-- col main derecho -->
+
+
+                        <!-- ------------CALENDARIO------------- -->
+                        <!-- SOLO SE USA EN LA VISTA GENERAL -->
+                        <!-- ------------FIN CALENDARIO------------- -->
+
+
+                    </div>
+                    <!--CIERRE col main derecho -->
+                </div><!-- CIERRE row del main -->
+                <!-- ----------- FIN MAIN ------------------------------------------------ -->
+
+                <!-- -----------FOOTER------------------------------------------------ -->
+                <div id="footer" class="row">
+                    <!-- row general del footer -->
+                    <!-- -----------FOOTER IZQUIERDO -->
+                    <div class="col-1">
+                        <!-- col footer izquierdo -->
+                        
+                    </div><!-- CIERRE col footer izquierdo -->
+
+
+                    <!-- -----------FOOTER CENTRAL -----BOTONES -->
+                    <!-- En caso de solo necesitar un botón, se debe borrar un col (izquierdo o derecho) -->
+                    <div class="col">
+                        <!-- col footer central -->
+                        <div class="row text-center">
+                            <!-- row botones footer -->
+                            <div class="col">
+                                <!-- col 1 botones footer -->
+                                <a type="button" class="btn btn-primary align-middle " href="inicio.html">Atrás</a>
+                            </div> <!-- CIERRE col 1 botones footer -->
+                            <div class="col">
+                                <!-- col 2 botones footer -->
+                                
+                            </div>
+                            <!--CIERRE col 2 botones footer -->
+                        </div> <!-- CIERRE row botones footer -->
+                    </div><!-- CIERRE col footer central -->
+                    <!-- -----------FIN FOOTER CENTRAL -----BOTONES -->
+
+
+
+                    <!-- -----------FOOTER DERECHO -->
+                    <div class="col-2">
+                        <!--col footer derecho -->
+                        
+                    </div><!-- CIERRE col footer derecho -->
+                </div>
+                <!--CIERRE row general del footer -->
+                <!-- -----------FIN FOOTER------------------------------------------------ -->
+
+                <!-- ----------- CIERRE ESPACIO DE TRABAJO DERECHO COL-10 -->
+            </div><!-- CIERRE ESPACIO DE TRABAJO DERECHO -->
+
+
+            <!-- -----------CIERRES DE ETIQUETAS GENERALES ------------------------------------------------ -->
+        </div>
+        <!--CIERRE Row general -->
+    </div><!-- CIERRE Contenedor -->
+    <!-- boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        rossorigin="anonymous"></script>
+</body>
+
+</html>
