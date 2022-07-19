@@ -30,14 +30,12 @@ public class RegistroController {
     }
 
     @PostMapping("/usuario")
-    public String guardarUsuario(@Valid @ModelAttribute("usuario") Usuario usuario, 
-    BindingResult resultado,
-    Model model) {
+    public String guardarUsuario(@Valid @ModelAttribute("usuario") Usuario usuario, BindingResult resultado, Model model) {
 
-        if(resultado.hasErrors()) { //capturando si existe error en el ingreso de datos 
+        /* if(resultado.hasErrors()) { //capturando si existe error en el ingreso de datos 
             model.addAttribute("msgError", "Debe ingresar los datos correctamente");
             return "registro.jsp";
-        } else {        
+        } else { */        
 
         //Capturamos el objeto con los atributos llenos
         System.out.println(usuario.getNombre()+ " " + usuario.getApellido()+" "+ usuario.getFechaDeNacimiento());
@@ -46,6 +44,6 @@ public class RegistroController {
         usuarioService.saveUsuario(usuario);
 
         return "index.jsp"; // Página a desplegar
-        }
+       // }
     }
 }

@@ -16,6 +16,9 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
+
 @Entity
 @Table(name="usuarios")
 public class Usuario {
@@ -29,7 +32,9 @@ public class Usuario {
     private String apellido;
     @NotNull
     private String rut;
-    @NotNull
+    
+    /* @Temporal(TemporalType.DATE) */
+    @DateTimeFormat(iso=ISO.DATE)
     private Date fechaDeNacimiento;
     @NotNull
     private String correo; 
