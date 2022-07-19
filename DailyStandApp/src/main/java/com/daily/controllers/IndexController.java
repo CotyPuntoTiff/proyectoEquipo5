@@ -12,7 +12,7 @@ public class IndexController {
     @RequestMapping("/") //anotacion para caputar las rutas
     public String index(Model model) {
 
-        // Instancia de usuario
+        //Instancia de usuario
         Usuario usuario = new Usuario();
 
         // Pasando el usuario a la vista JSP
