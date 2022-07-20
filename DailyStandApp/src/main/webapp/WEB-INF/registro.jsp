@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-        <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
             <!DOCTYPE html>
             <html lang="es">
 
@@ -35,6 +35,9 @@
                         <br>
                         <form:label path="password">Password</form:label>
                         <form:input type="password" path="password" />
+                        <br>
+                         <form:label path="passwordConfirmacion">Confirmar Password</form:label>
+                        <form:input type="password" path="passwordConfirmacion" />
                         <br>
                         <button type="submit" value="Registrar"> Registrarse </button>
                     </form:form>

@@ -14,7 +14,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
+import javax.persistence.Transient;
 
 @Entity
 @Table(name="usuarios")
@@ -30,11 +30,14 @@ public class Usuario {
     
     private String rut;
     
-    private Date fechaDeNacimiento;
+    private String fechaDeNacimiento;
     
     private String correo; 
     
     private String password;
+    
+    @Transient//no se almacena o crea en la base de datos
+    private String passwordConfirmacion;
 
     //Relacion OneToMany con GrupoUsuario
     @OneToMany(mappedBy ="usuario",cascade=CascadeType.ALL ,fetch=FetchType.LAZY) //CASCADE ES UNA RESTRICCION QUE IMPIDE ELIMINAR EL USUARIO SI NO SE HA ROTO LA RELACION
@@ -57,7 +60,7 @@ public class Usuario {
     }
 
     //Constructor con atributos
-    public Usuario(String nombre, String apellido, String rut, Date fechaDeNacimiento, String correo,
+    public Usuario(String nombre, String apellido, String rut, String fechaDeNacimiento, String correo,
             String password) {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -100,11 +103,11 @@ public class Usuario {
         this.rut = rut;
     }
 
-    public Date getFechaDeNacimiento() {
+    public String getFechaDeNacimiento() {
         return fechaDeNacimiento;
     }
 
-    public void setFechaDeNacimiento(Date fechaDeNacimiento) {
+    public void setFechaDeNacimiento(String fechaDeNacimiento) {
         this.fechaDeNacimiento = fechaDeNacimiento;
     }
 
@@ -124,7 +127,15 @@ public class Usuario {
         this.password = password;
     }
 
-    // Insertará en el atributo, la fecha antes de insertar a la base de datos
+    public String getPasswordConfirmacion() {
+		return passwordConfirmacion;
+	}
+
+	public void setPasswordConfirmacion(String passwordConfirmacion) {
+		this.passwordConfirmacion = passwordConfirmacion;
+	}
+
+	// Insertará en el atributo, la fecha antes de insertar a la base de datos
     @PrePersist
     protected void onCreate(){
         this.createdAt = new Date();
